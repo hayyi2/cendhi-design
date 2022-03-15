@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title + " - " if title else "" }} {{ site_name }}</title>
+    <base href="{{ base_url }}">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="h-screen flex flex-col bg-blue-50 bg-opacity-25">
+    {% include "../_components/navadmin.njk" %}
+    <div class="flex-1 flex h-[calc(100%-4rem)]">
+        {% include "../_components/sidenavadmin.njk" %}
+        <div class="flex-1 h-auto overflow-auto">
+            <div class="max-w-7xl mx-auto px-2 sm:px-6">
+                <div class="pt-6 mb-8">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

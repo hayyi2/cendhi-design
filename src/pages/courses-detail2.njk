@@ -1,0 +1,71 @@
+{% extends "_layouts/base.njk" %}
+
+{% set title = 'Course Detail' %}
+{% set is_courses = true %}
+
+{% block content %}
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="py-8">
+            <h2 class="text-2xl font-semibold text-gray-800">Full-Stack Laravel React Native: FoodMarket Apps</h2>
+            <span class="text-gray-600">Lorem ipsum dolor sit amet</span>
+        </div>
+        <div class="mb-8">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="col-span-2 mb-4">
+                    <div class="shadow rounded-lg bg-white">
+                        <nav class="">
+                            <div class="flex justify-between h-14 border-b border-gray-200">
+                                <div class="flex-1 flex justify-center sm:items-stretch sm:justify-start">
+                                    <div class="hidden sm:block sm:ml-6">
+                                        <div class="flex space-x-3 h-full">
+                                            <a href="{{ base_url }}pages/courses-detail.html" class="{{ 'text-blue-600 border-b-2 border-blue-600 -mb-[1px]' if false else 'text-gray-400 hover:text-gray-600' }} px-3 text-sm font-medium inline-flex items-center" aria-current="page">Contents</a>
+                                            <a href="{{ base_url }}pages/courses-detail2.html" class="{{ 'text-blue-600 border-b-2 border-blue-600 -mb-[1px]' if true else 'text-gray-400 hover:text-gray-600' }} px-3 text-sm font-medium inline-flex items-center">Description</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="py-4 px-5 prose max-w-none">
+                            <h3>Course Descriptions</h3>
+                            <p>
+                                If you’re learning to program for the first time, or if you’re coming from a different language, this course, JavaScript: Getting Started, will give you the basics for coding in JavaScript. First, you'll discover the types of applications that can be built with JavaScript, and the platforms they’ll run on.
+                            </p>
+
+                            <p>
+                                Next, you’ll explore the basics of the language, giving plenty of examples. Lastly, you’ll put your JavaScript knowledge to work and modify a modern, responsive web page. When you’re finished with this course, you’ll have the skills and knowledge in JavaScript to create simple programs, create simple web applications, and modify web pages.
+                            </p>
+
+                            <h4>What you’ll learn</h4>
+                            <ul>
+                                <li>Recognize the importance of understanding your objectives when addressing an audience.</li>
+                                <li>Identify the fundaments of composing a successful close.</li>
+                                <li>Explore how to connect with your audience through crafting compelling stories.</li>
+                                <li>Examine ways to connect with your audience by personalizing your content.</li>
+                                <li>Break down the best ways to exude executive presence.</li>
+                                <li>Explore how to communicate the unknown in an impromptu communication.</li>
+                                <li>Maecenas viverra condimentum nulla molestie condimentum. Nunc ex libero, feugiat quis lectus vel, ornare euismod ligula. Aenean sit amet arcu nulla.</li>
+                            </ul>
+
+                            <p>
+                                Duis facilisis ex a urna blandit ultricies. Nullam sagittis ligula non eros semper, nec mattis odio ullamcorper. Phasellus feugiat sit amet leo eget consectetur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="shadow rounded-lg bg-white">
+                        <div class="p-2">
+                            <img src="https://buildwithangga.com/storage/assets/thumbnails/thumbnail kelas laravel react native buildwith angga.png" 
+                            class="rounded-lg"
+                            alt="">
+                        </div>
+                        <div class="py-4 px-5 space-y-2">
+                            <a href="{{ base_url }}pages/register.html" class="block text-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md cursor-pointer text-white bg-blue-600 hover:bg-blue-700 hover:border-blue-700 hover:text-white">Enrol Course</a>
+                            <a href="{{ base_url }}pages/login.html" class="block text-center py-2 px-4 border border-blue-600 shadow-sm text-sm font-medium rounded-md cursor-pointer text-blue-600 hover:bg-blue-700 hover:border-blue-700 hover:text-white">Get Full Access</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

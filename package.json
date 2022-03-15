@@ -1,0 +1,24 @@
+{
+  "name": "cendhi-design",
+  "version": "1.0.0",
+  "description": "Simple starter tailwindcss and gulp nunjucks.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "concurrently --kill-others \"tailwindcss -i ./src/css/style.css -o ./dist/css/style.css --watch\" \"gulp watch\"",
+    "build": "concurrently --kill-others \"tailwindcss -i ./src/css/style.css -o ./dist/css/style.css --minify\" \"gulp\""
+  },
+  "keywords": [],
+  "author": "Hayyi",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.0",
+    "@tailwindcss/typography": "^0.5.2",
+    "concurrently": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-nunjucks": "^5.1.0",
+    "gulp-remove-empty-lines": "^0.1.0",
+    "gulp-rename": "^2.0.0",
+    "tailwindcss": "^3.0.23"
+  }
+}
